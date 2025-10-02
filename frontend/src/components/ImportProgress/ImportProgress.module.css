@@ -1,0 +1,162 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.statusCard {
+  padding: 2rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+  border: 2px solid;
+  background-color: white;
+}
+
+.statusHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.statusIcon {
+  font-size: 2rem;
+}
+
+.statusTitle {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.statusMessage {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.success {
+  border-color: #10b981;
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.error {
+  border-color: #ef4444;
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.warning {
+  border-color: #f59e0b;
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.processing {
+  border-color: #3b82f6;
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.progressSection {
+  margin-bottom: 2rem;
+}
+
+.progressInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.progressPercent {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #3b82f6;
+}
+
+.progressBar {
+  width: 100%;
+  height: 1.5rem;
+  background-color: #e5e7eb;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  transition: width 0.3s ease;
+  background-color: #3b82f6;
+}
+
+.progressFill.success {
+  background-color: #10b981;
+}
+
+.progressFill.error {
+  background-color: #ef4444;
+}
+
+.progressFill.warning {
+  background-color: #f59e0b;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.errorText {
+  color: #ef4444;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .statusCard {
+    padding: 1.5rem;
+  }
+  
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

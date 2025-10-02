@@ -1,0 +1,64 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.description {
+  margin: 0 0 2rem 0;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+.passwordContainer {
+  position: relative;
+}
+
+.togglePassword {
+  position: absolute;
+  right: 0.75rem;
+  top: 2.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.25rem;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.togglePassword:hover {
+  opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

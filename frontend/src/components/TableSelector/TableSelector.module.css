@@ -1,0 +1,158 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.description {
+  margin: 0 0 2rem 0;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.searchContainer {
+  margin-bottom: 1rem;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.searchInput:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.tableList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background-color: #f9fafb;
+}
+
+.tableItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tableItem:hover {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+}
+
+.tableItem.selected {
+  border-color: #3b82f6;
+  background-color: #dbeafe;
+}
+
+.tableName {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.checkmark {
+  color: #10b981;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  color: #6b7280;
+}
+
+.schemaPreview {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+}
+
+.schemaTitle {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.schemaContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.schemaHeader {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 1rem;
+  padding: 0.75rem;
+  background-color: #f3f4f6;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+.schemaRow {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.875rem;
+}
+
+.columnName {
+  color: #111827;
+  font-weight: 500;
+}
+
+.columnType {
+  color: #6b7280;
+  font-family: monospace;
+}
+
+.columnNullable {
+  color: #6b7280;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .schemaHeader,
+  .schemaRow {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}

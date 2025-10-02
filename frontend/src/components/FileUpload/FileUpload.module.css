@@ -1,0 +1,154 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.description {
+  margin: 0 0 2rem 0;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.dropzone {
+  border: 2px dashed #d1d5db;
+  border-radius: 0.75rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #f9fafb;
+}
+
+.dropzone:hover {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+}
+
+.dropzone.active {
+  border-color: #3b82f6;
+  background-color: #dbeafe;
+}
+
+.dropzone.uploading {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.fileInput {
+  display: none;
+}
+
+.uploadPrompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.primaryText {
+  font-size: 1rem;
+  color: #374151;
+  margin: 0;
+}
+
+.clickText {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.secondaryText {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.uploadingState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.uploadProgress {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3b82f6;
+  margin: 0;
+}
+
+.progressBar {
+  width: 100%;
+  max-width: 300px;
+  height: 0.5rem;
+  background-color: #e5e7eb;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: #3b82f6;
+  transition: width 0.3s ease;
+}
+
+.fileInfo {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.fileInfoTitle {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.fileDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.value {
+  font-size: 0.875rem;
+  color: #111827;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .dropzone {
+    padding: 2rem 1rem;
+  }
+}
